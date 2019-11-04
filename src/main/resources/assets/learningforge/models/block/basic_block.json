@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "learningforge:blocks/basic_block"
+	}
+}

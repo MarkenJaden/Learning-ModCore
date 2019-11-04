@@ -1,5 +1,4 @@
 # eclipse
-bin
 *.launch
 .settings
 .metadata
@@ -14,9 +13,19 @@ out
 .idea
 
 # gradle
+*gradle*
 build
-.gradle
 
 # other
 eclipse
 run
+
+# sketchup
+*.skb
+
+*.jar
+
+# Projects
+TrackAPI
+UniversalModCore
+src/main/java/net/landofrails/lmc/Mod.java

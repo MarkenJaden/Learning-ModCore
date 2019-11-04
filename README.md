@@ -1,4 +1,4 @@
-# Learning Forge
+# Learning ModCore
 
 MarkenJaden tries Java and wants to draw a positive aspect for [LandOfRails](https://www.landofrails.net/) from it.
 

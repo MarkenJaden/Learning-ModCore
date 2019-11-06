@@ -2,8 +2,8 @@ package net.landofrails.lmc;
 
 import cam72cam.mod.ModCore;
 import cam72cam.mod.ModEvent;
+import cam72cam.mod.text.Command;
 
-@net.minecraftforge.fml.common.Mod(modid = LearningModCore.MODID, name = LearningModCore.NAME, version = LearningModCore.VERSION, dependencies = "required-before:modcore", acceptedMinecraftVersions = "[1.12,1.13)")
 public class LearningModCore extends ModCore.Mod {
     public static final String MODID = "lmc";
     public static final String NAME = "LearningModCore";
@@ -26,12 +26,23 @@ public class LearningModCore extends ModCore.Mod {
 
     @Override
     public String modID() {
-        return null;
+        return MODID;
     }
 
     @Override
     public void commonEvent(ModEvent event) {
+        switch (event){
+            case CONSTRUCT:
+                LMCItems.register();
+                Command.register(new LMCCommand());
+                break;
 
+            case INITIALIZE:
+                break;
+
+            case FINALIZE:
+                break;
+        }
     }
 
     @Override

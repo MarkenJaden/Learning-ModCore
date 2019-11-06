@@ -1,0 +1,16 @@
+[
+{
+  "modid": "lmc",
+  "name": "LearningModCore",
+  "description": "Adds nothing useful to Minecraft!",
+  "version": "",
+  "mcversion": "${mcversion}",
+  "url": "https://www.landofrails.net/",
+  "updateUrl": "",
+  "authorList": ["MarkenJaden"],
+  "credits": "Super awesome Christian Mesh (cam72cam) because he and some other dudes created ModCore",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

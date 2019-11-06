@@ -1,10 +1,10 @@
 package net.landofrails.lmc;
 
-import net.landofrails.lmc.items.*;
+import net.landofrails.lmc.blocks.*;
 
-public class LMCItems {
+public class LMCBlocks {
 
-    public static ItemTest ITEM_TEST = new ItemTest();
+
 
     public static void register() {
         // loads static classes and ctrs

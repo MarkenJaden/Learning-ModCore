@@ -2,6 +2,7 @@ package net.landofrails.lmc;
 
 import cam72cam.mod.ModCore;
 import cam72cam.mod.ModEvent;
+import cam72cam.mod.item.CreativeTab;
 import cam72cam.mod.text.Command;
 
 public class LearningModCore extends ModCore.Mod {

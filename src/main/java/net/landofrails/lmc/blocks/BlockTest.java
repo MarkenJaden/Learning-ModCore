@@ -3,33 +3,29 @@ package net.landofrails.lmc.blocks;
 import cam72cam.mod.block.BlockSettings;
 import cam72cam.mod.block.BlockType;
 import cam72cam.mod.entity.Player;
-import cam72cam.mod.item.Fuzzy;
-import cam72cam.mod.item.ItemBase;
 import cam72cam.mod.item.ItemStack;
-import cam72cam.mod.item.Recipes;
 import cam72cam.mod.math.Vec3d;
 import cam72cam.mod.math.Vec3i;
 import cam72cam.mod.util.Facing;
 import cam72cam.mod.util.Hand;
 import cam72cam.mod.world.World;
 import net.landofrails.lmc.LearningModCore;
-import net.landofrails.lmc.items.ItemTabs;
-import net.minecraft.block.BlockTNT;
-import net.minecraft.entity.monster.IMob;
+import net.minecraft.item.Item;
 
 public class BlockTest extends BlockType {
+
     public BlockTest(){
-        super(new BlockSettings(LearningModCore.MODID, "block_test"));
+        super(new BlockSettings(LearningModCore.MODID,"block_test"));
     }
 
     @Override
     public boolean tryBreak(World world, Vec3i pos, Player player) {
-        return false;
+        return true;
     }
 
     @Override
     public void onBreak(World world, Vec3i pos) {
-
+        world.dropItem(new ItemStack(Item.getItemById(1)),pos);
     }
 
     @Override

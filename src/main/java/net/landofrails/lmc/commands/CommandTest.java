@@ -1,16 +1,17 @@
-package net.landofrails.lmc;
+package net.landofrails.lmc.commands;
 
 import cam72cam.mod.text.Command;
 import cam72cam.mod.text.PlayerMessage;
 import cam72cam.mod.world.World;
+import net.landofrails.lmc.LearningModCore;
 
 import java.util.function.Consumer;
 
-public class LMCCommand extends Command {
+public class CommandTest extends Command {
 
     @Override
     public String getPrefix(){
-        return LearningModCore.MODID;
+        return "test";
     }
     @Override
     public String getUsage(){
@@ -32,4 +33,5 @@ public class LMCCommand extends Command {
             return true;
         } return false;
     }
+
 }

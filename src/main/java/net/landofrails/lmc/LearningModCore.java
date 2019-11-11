@@ -2,8 +2,8 @@ package net.landofrails.lmc;
 
 import cam72cam.mod.ModCore;
 import cam72cam.mod.ModEvent;
-import cam72cam.mod.item.CreativeTab;
 import cam72cam.mod.text.Command;
+import net.landofrails.lmc.commands.CommandTest;
 
 public class LearningModCore extends ModCore.Mod {
     public static final String MODID = "lmc";
@@ -35,7 +35,9 @@ public class LearningModCore extends ModCore.Mod {
         switch (event){
             case CONSTRUCT:
                 LMCItems.register();
-                Command.register(new LMCCommand());
+                LMCBlocks.register();
+                //Commands
+                Command.register(new CommandTest());
                 break;
 
             case INITIALIZE:

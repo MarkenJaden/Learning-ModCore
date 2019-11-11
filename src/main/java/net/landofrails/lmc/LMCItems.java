@@ -7,6 +7,5 @@ public class LMCItems {
     public static ItemTest ITEM_TEST = new ItemTest();
 
     public static void register() {
-        // loads static classes and ctrs
     }
 }

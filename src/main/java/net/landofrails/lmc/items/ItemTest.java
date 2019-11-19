@@ -14,34 +14,35 @@ import net.landofrails.lmc.LMCBlocks;
 import net.landofrails.lmc.LearningModCore;
 
 public class ItemTest extends ItemBase {
-    public ItemTest(){
-        super(LearningModCore.MODID, "item_test",32,ItemTabs.MAIN_TAB);
+    public ItemTest() {
+        super(LearningModCore.MODID, "item_test", 32, ItemTabs.MAIN_TAB);
 
-        Recipes.register(this,1, Fuzzy.DIRT);
+        Recipes.register(this, 1, Fuzzy.DIRT);
     }
 
     @Override
-    public ClickResult onClickBlock(Player player, World world, Vec3i pos, Hand hand, Facing facing, Vec3d hit){
-        switch (facing){
+    public ClickResult onClickBlock(Player player, World world, Vec3i pos, Hand hand, Facing facing, Vec3d hit) {
+        switch (facing) {
             case UP:
-                world.setBlock(pos.up(),LMCBlocks.BLOCK_TEST);
+                world.setBlock(pos.up(), LMCBlocks.BLOCK_TEST);
                 break;
             case DOWN:
-                world.setBlock(pos.down(),LMCBlocks.BLOCK_TEST);
+                world.setBlock(pos.down(), LMCBlocks.BLOCK_TEST);
                 break;
             case EAST:
-                world.setBlock(pos.east(),LMCBlocks.BLOCK_TEST);
+                world.setBlock(pos.east(), LMCBlocks.BLOCK_TEST);
                 break;
             case WEST:
-                world.setBlock(pos.west(),LMCBlocks.BLOCK_TEST);
+                world.setBlock(pos.west(), LMCBlocks.BLOCK_TEST);
                 break;
             case NORTH:
-                world.setBlock(pos.north(),LMCBlocks.BLOCK_TEST);
+                world.setBlock(pos.north(), LMCBlocks.BLOCK_TEST);
                 break;
             case SOUTH:
-                world.setBlock(pos.south(),LMCBlocks.BLOCK_TEST);
+                world.setBlock(pos.south(), LMCBlocks.BLOCK_TEST);
                 break;
-            default: world.setBlock(pos.up(),LMCBlocks.BLOCK_TEST);
+            default:
+                world.setBlock(pos.up(), LMCBlocks.BLOCK_TEST);
         }
         return ClickResult.PASS;
     }

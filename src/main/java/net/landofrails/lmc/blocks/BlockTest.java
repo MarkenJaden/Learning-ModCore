@@ -9,7 +9,9 @@ import cam72cam.mod.math.Vec3i;
 import cam72cam.mod.util.Facing;
 import cam72cam.mod.util.Hand;
 import cam72cam.mod.world.World;
+import net.landofrails.lmc.LMCItems;
 import net.landofrails.lmc.LearningModCore;
+import net.landofrails.lmc.items.ItemTest;
 import net.minecraft.item.Item;
 
 public class BlockTest extends BlockType {
